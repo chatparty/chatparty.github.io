@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer {
+    display: flex;
+    /*display: none;*/
+    align-items: center;
+    flex-wrap: wrap;
+    
+    /*Gradient*/
+    background: rgba(255,119,0,1);
+    background: -moz-linear-gradient(left, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,119,0,1)), color-stop(100%, rgba(255,38,136,1)));
+    background: -webkit-linear-gradient(left, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    background: linear-gradient(to right, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7700', endColorstr='#ff2688', GradientType=1 );
+    
+    /*Box Shadow*/
+    -webkit-box-shadow: 0px -4px 21px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 21px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 21px 1px rgba(0,0,0,0.75);
+    
+    color: white;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    word-wrap: break-word;
+    padding: 10px;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+
+.user {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#beginChat {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: "Nunito";
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);    
+}
+
+.header {
+    display: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    /*Gradient*/
+    background: rgba(255,119,0,1);
+    background: -moz-linear-gradient(left, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,119,0,1)), color-stop(100%, rgba(255,38,136,1)));
+    background: -webkit-linear-gradient(left, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    background: linear-gradient(to right, rgba(255,119,0,1) 0%, rgba(255,38,136,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7700', endColorstr='#ff2688', GradientType=1 );
+    
+    /*Box Shadow*/
+    -webkit-box-shadow: 0px 4px 21px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 21px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 21px 1px rgba(0,0,0,0.75);
+    
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    
+    color: white;
+    font-family: "Nunito", sans-serif;
+    /*padding-left: 15;*/
+    padding: 10px;
+}
+
+body {
+    background-color: #111111;
+}
+
+.nameBox {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.chatBox {
+    display: none;
+    width: 100%;
+}
+
+span {
+    padding: 10px;
+}
+
+li {
+    text-align: left;
+    background-color: #ff7700;
+    width: 50%;
+}
+
+#chatInput {
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background-color: #ffffff;
+    
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 12px 20px;
+    opacity: 0.4;
+    
+    color: #111111;
+}
+
+#name {
+    font-family: "Nunito", sans-serif;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background-color: #ffffff;
+    
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 12px 20px;
+    opacity: 0.4;
+    
+    color: #111111;
+    display: none;
+}
+
+#username {
+    display: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+
+
+html,
+body,
+.page {
+  height: 100%; /* needed for proper layout */
+}
+
+/* width */
+.page-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.page-content::-webkit-scrollbar-track {
+    opacity: 0.0;
+}
+ 
+/* Handle */
+.page-content::-webkit-scrollbar-thumb {
+    background: #111111; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.page-content::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+body {
+  overflow: hidden;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  flex: 0 0 auto;
+}
+
+.page-content {
+    flex: 1 1 auto;
+    position: relative;/* need this to position inner content */
+    overflow-y: auto;
+    opacity: 0.0;
+}
+
+.page-footer {
+  flex: 0 0 auto;
+}
