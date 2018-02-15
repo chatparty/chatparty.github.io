@@ -93,7 +93,19 @@ body {
 
 .nameBox {
     margin-left: auto;
-    flex-shrink: 0;
+    width: 70%;
+}
+
+@media only screen and (max-width: 580px) {
+    .namebox {
+        width: 100%;
+        margin-left: inherit;
+    }
+    
+    .header {
+        display: block;
+        text-align: center;
+    }
 }
 
 .chatBox {
@@ -141,6 +153,7 @@ li {
     
     color: #111111;
     display: none;
+    width: 100%;
 }
 
 #username {
