@@ -1,5 +1,47 @@
 <html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=http://chatparty.github.io/HTML/index.html" />
-  </head>
+    <head>
+        <title>ChatParty</title>
+        
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        
+        <!--ViewPort-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Firebase-->
+        
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+        
+        <!--JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="JS/script.js"></script>
+    </head>
+    
+    <body class="page">
+        <!--Header-->
+        <div class="header page-header">
+            <div >
+                <h1>ChatParty</h1>
+            </div>
+            
+            <div class="nameBox">
+                <input type="text" id="name" name="name" maxlength="15" placeholder="Enter a name...">
+                <h2 id="username"></h2>
+            </div>
+        </div>
+        
+        <!--Content-->
+        <div class="page-content">
+            <p id="beginChat">Beginning of chat<p>
+            <ul id="messages">
+            </ul>
+        </div>
+        
+        <!--Message Input-->
+        <div class="footer page-footer">
+            <div class="chatBox">
+                <input type="text" id="chatInput" name="chatInput" maxlength="500" placeholder="Type...">
+            </div>
+        </div>
+    </body>
 </html>
