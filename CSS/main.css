@@ -41,13 +41,17 @@ li {
     color: white;
     margin: 10px;
     border-radius: 20px;
+    text-align: left;
+    background-color: #ff7700;
+    width: 50%;
 }
 
 
 
 .user {
-    text-decoration: underline;
     font-weight: bold;
+    font-size:17px;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
 }
 
 #beginChat {
@@ -96,12 +100,7 @@ body {
     width: 70%;
 }
 
-#username {
-    display: none;
-    font-family: "Nunito", sans-serif;
-    font-size: 20px;
-    text-align: right;
-}
+
 
 @media only screen and (max-width: 580px) {
     .namebox {
@@ -126,12 +125,6 @@ body {
 
 span {
     padding: 10px;
-}
-
-li {
-    text-align: left;
-    background-color: #ff7700;
-    width: 50%;
 }
 
 #chatInput {
