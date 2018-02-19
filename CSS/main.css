@@ -5,6 +5,12 @@
     padding: 0px;
 }
 
+@supports (-webkit-appearance:none) {
+    #username {
+        text-align: right;
+    }
+}
+
 .footer {
     display: flex;
     /*display: none;*/
